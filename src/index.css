@@ -1,0 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-color: #f3f4f6;
+  background-color: #1A181F;
+}
