@@ -17,7 +17,7 @@ function About(){
                         experience with microcontrollers and hardware 
                         troubleshooting, along with developing applications 
                         using technologies such as 
-                        React, JavaScript, Python, and FastAPI, I also have basic knowledge 
+                        React, JavaScript, Python, and FastAPI, I also have a basic knowledge 
                         in C++ programming language. As I 
                         continue to expand my technical knowledge, I'm also 
                         pursuing my interest in cybersecurity, with the goal 

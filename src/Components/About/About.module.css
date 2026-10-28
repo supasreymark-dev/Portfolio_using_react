@@ -9,7 +9,11 @@
     justify-content: flex-start;
     flex-direction: column;
 
-    padding: 0 3vw;
+    padding: 0 6vw;
+
+    border-bottom: 1px solid #433E4F;
+    border-top: 1px solid #433E4F;
+
 }
 
 .container{
@@ -48,6 +52,6 @@
     font-size: clamp(1rem, 2.6vw, 1.6rem);
     text-indent: 60px;
     /* letter-spacing: 1px; */
-    /* line-height: 40px; */
+    line-height: 40px;
     /* word-spacing: 1.5px; */
 }
