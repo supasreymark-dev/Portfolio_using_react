@@ -37,10 +37,25 @@
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+
     color: var(--font-color);
     font-family: Calibri;
-    gap: 10px;
+    column-gap: 10px;
+    /* row-gap: 2.7vw; */
+    /* row-gap: 2rem; */
+    /* row-gap: 1rem; */
+
+    row-gap: clamp(1rem, 4vw, 3rem);
+    /* flex-wrap: wrap; */
+    padding-top: 30px;
 }
+/* 
+.projects{
+    border: 1px solid red;
+    margin-top: clamp(2rem, 6vw, 3rem);
+} */
+
 
 .projects img{
     height: 100px;
@@ -49,8 +64,9 @@
 
 .projects > span{
     margin: 0;
-    font-size: clamp(1rem, 2vw, 2.3rem);
+    font-size: clamp(1rem, 1.6vw, 2.3rem);
     font-family: Helvetica, Verdana;
+    /* border: 1px solid red; */
 }
 
 
@@ -74,7 +90,8 @@
     border-radius: 10px;
 
     overflow: hidden;
-    width: 70%;
+    /* width: 70%; */
+    width: 90%;
 
     transition: transform 0.2s ease,
                 border 0.2s ease,
@@ -87,7 +104,7 @@
     box-shadow: 0px 0px 30px 0.7px rgba(255, 255, 255, 0.2);
 }
 
-.Card > img{
+.Card > .overlay > img{
     
     object-fit: cover;
     box-shadow: inset 2px 2px 20px 5px rgba(255, 255, 255, 1);
@@ -128,7 +145,8 @@
 
 .stacks > span{
     text-decoration: underline;
-    color: #BDABC9;
+    /* color: #BDABC9; */
+    color: var(--font-color);
     text-underline-offset: 4px;
 }
 
@@ -140,8 +158,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+
     padding: 2vw 0 2px 0;
     width: 90%;
+
+    gap: 2vw;
 }
 
 .stacksLogo > div{
@@ -207,6 +231,7 @@
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 50px;
+    padding: 0 1vw 0 1vw;
 
     font-size: clamp(0.6rem, 1vw, 1.8rem);
 }
@@ -225,7 +250,8 @@
 
 .Links > span{
     text-decoration: underline;
-    color: #BDABC9;
+    /* color: #BDABC9; */
+    color: var(--font-color);
     text-underline-offset: 4px;
 }
 
@@ -260,9 +286,11 @@
 }
 
 .Links > div > a:hover{
-    color: #d2c6da;
+    /* color: #d2c6da; */
+    /* border: 1px solid #d2c6da; */
     background-color: #1b292d;
-    border: 1px solid #d2c6da;
+    color: white;
+    border: 1px solid white;
 }
 
 .Links > div > a > div{
