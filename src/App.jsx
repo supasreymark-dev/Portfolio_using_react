@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
 import About from './Components/About/About.jsx';
 import Projects from './Components/Projects/Projects.jsx';
+import Skills from './Components/Skills/Skills.jsx';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Skills />
       </div>
     </main>
   );
