@@ -15,7 +15,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 function Projects(){
 
     return(
-        <main className={style.wrapper}>
+        <main className={style.wrapper} id='projects'>
             <div className={style.projectsContainer}>
                 <div className={style.projectHeader}>
                     <h2>Projects</h2>
