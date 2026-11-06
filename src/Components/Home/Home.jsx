@@ -6,7 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 function Home(){
 
     return(
-        <main className={style.home}>
+        <main className={style.home} id='home'>
             <div className={style.headerGap}>
 
             </div>

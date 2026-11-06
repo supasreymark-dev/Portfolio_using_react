@@ -3,7 +3,7 @@ import style from './Skills.module.css';
 function Skills(){
 
     return (
-        <main className={style.wrapper}>
+        <main className={style.wrapper} id='skills'>
             <div className={style.container}>
                 <div className={style.skillsHeader}>
                     <h2>Skills</h2>
@@ -70,7 +70,7 @@ function Skills(){
                         </div>
 
                         <div className={style.skillsDiv}>
-                            <h3>Communication</h3>
+                            <h3>Written Communication</h3>
                         </div>
 
                         <div className={style.skillsDiv}>
@@ -78,7 +78,7 @@ function Skills(){
                         </div>
 
                         <div className={style.skillsDiv}>
-                            <h3>Work Ethic</h3>
+                            <h3>Teamwork</h3>
                         </div>
 
                         <div className={style.skillsDiv}>

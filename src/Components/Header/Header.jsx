@@ -8,7 +8,7 @@ function showMenu(){
     alert("Hello world");
 }
 
-function Header(){
+function Header({homeRef, aboutRef, projectRef, skillRef, contactRef}){
 
     const menuRef = useRef(null);
     const showRed = useRef(null);
@@ -24,23 +24,23 @@ function Header(){
 
     function home(){
         console.log("home");
-        setActive(!active);
+        setActive(false);
     }
     function about(){
         console.log("about");
-        setActive(!active);
+        setActive(false);
     }
     function skills(){
         console.log("skills");
-        setActive(!active);
+        setActive(false);
     }
     function projects(){
         console.log("projects");
-        setActive(!active);
+        setActive(false);
     }
     function contact(){
         console.log("contact");
-        setActive(!active);
+        setActive(false);
     }
 
     useEffect(() => {
@@ -58,6 +58,13 @@ function Header(){
     }, []);
 
 
+    function scrollIntoSection(ref){
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
     return(
         <main className={style.header}>
 
@@ -72,15 +79,15 @@ function Header(){
                     <button className={ style.menuBtn} onClick={showActive}><IoMenu/></button>
 
                     <div className={`${style.buttons} ${active ? style.isActive : ""}`}>
-                        <button onClick={home}>Home</button>
+                        <button onClick={() => {home(), scrollIntoSection(homeRef)}}>Home</button>
                         <hr />
-                        <button onClick={about}>About</button>
+                        <button onClick={() => {about(), scrollIntoSection(aboutRef)}}>About</button>
                         <hr />
-                        <button onClick={projects}>Projects</button>
+                        <button onClick={() => {projects(), scrollIntoSection(projectRef)}}>Projects</button>
                         <hr />
-                        <button onClick={skills}>Skills</button>
+                        <button onClick={() => {skills(), scrollIntoSection(skillRef)}}>Skills</button>
                         <hr />
-                        <button onClick={contact}>Contact</button>
+                        <button onClick={() => {contact(), scrollIntoSection(contactRef)}}>Contact</button>
                     </div>
                 </div>
 

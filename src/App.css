@@ -1,9 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .content{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 10px;
     min-height: 100vh;
     /* overflow-y: auto; */
+}
+
+.content > div{
+    scroll-margin-top: 15vh;
 }
 
 /* .content hr{
@@ -12,3 +21,130 @@
     padding: 0;
     width: 100%;
 } */
+
+footer{
+    /* padding: 0 20px 20px 20px; */
+    background-color: rgba(28, 19, 56, 0.4);
+    border-top: 1px solid #433E4F;
+    color: var(--font-color);
+    font-family: Calibri;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+footer > div{
+    /* border: 1px solid white; */
+    padding: 0 20px;
+    opacity: 80%;
+}
+
+footer .footerContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 100%;
+
+    position: relative;
+
+    opacity: 50%;
+    /* border: 1px solid white; */
+}
+
+/* .footerContent .connect{
+    border: 1px solid white;
+} */
+
+.connect{
+    /* border: 1px solid red; */
+    width: 20%;
+}
+
+.connect > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect > div{
+
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.connect > div > a{
+    color: #BDABC9;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    border-radius: 50px;
+
+    transition: opacity 0.2s ease-in-out;
+}
+
+.connect > div > a:hover{
+    opacity: 70%;
+}
+
+footer .quickLinks{
+    text-align: center;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    text-align: left;
+    gap: 15px;
+
+    /* border: 1px solid white; */
+}
+
+.links > a{
+    color: #BDABC9;
+    text-decoration: none;
+}
+
+.links > a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+.quote{
+    margin-top: 60px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    flex-grow: 1;
+
+}
+
+.quote p{
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.quote span{
+    /* border: 1px solid white; */
+    width: 100%;
+    text-align: right;
+    font-size: 1vw;
+    opacity: 70%;
+}

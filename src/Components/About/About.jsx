@@ -4,7 +4,7 @@ import style from './About.module.css';
 function About(){
 
     return(
-        <main className={style.wrapper}>
+        <main className={style.wrapper} id='about'>
             <div className={style.container}>
                 <div className={style.aboutHeader}>
                     <h2>About me</h2>

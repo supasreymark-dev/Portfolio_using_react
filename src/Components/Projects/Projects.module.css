@@ -1,3 +1,7 @@
+main{
+    scroll-margin-top: 15vh;
+}
+
 .wrapper{
     /* min-height: 85vh; */
 
@@ -21,6 +25,8 @@
 
     flex-grow: 1;
     flex-direction: column;
+
+    padding-bottom: 2vw;
 }
 
 .projectHeader h2{
